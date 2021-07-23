@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+	integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <meta charset="ISO-8859-1">
+    <title>Home MTG - AT</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <header>
+		<nav class="navbar navbar-expand-lg navbar-light"
+			style="background-color: #e3f2fd;">
+			<span class="navbar-brand mb-0 h1"
+				style="font-weight: bold; margin: 0 auto;">Monte seu Deck com Magic The Gathering - Online</span>
+		</nav>
+	</header>
+    <div class="container text-center">
+
+        <div class="card" style="background-image: url('https://mmovicio.com.br/wp-content/uploads/2019/04/Magic.png');">
+            <div class="card-body">
+                <h1 style="color: antiquewhite; text-shadow: black 0.1em 0.1em 0.2em">MTG - Deck Builder</h1>
+                <br>
+                <p><a class="btn btn-primary" th:href="@{/decks}">Explore decks</a></p>
+                <br>
+                <p><a class="btn btn-primary" th:href="@{/register}">Register</a></p>
+            </div>
+        </div>
+        <br>
+
+        <div style="display: flex;">
+            
+              <div style="max-width:200px; max-height:300px; width: auto; height: auto; margin-right: 10px; margin-left: 20px;">
+                <img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129882&type=card" class="d-block w-100" alt="...">
+              </div>
+              <div style="max-width:200px; max-height:300px; width: auto; height: auto; margin-right: 10px;">
+                <img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=106525&type=card" class="d-block w-100" alt="...">
+              </div>
+              <div style="max-width:200px; max-height:300px; width: auto; height: auto; margin-right: 10px;">
+                <img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409741&type=card" class="d-block w-100" alt="...">
+              </div>
+              <div style="max-width:200px; max-height:300px; width: auto; height: auto; margin-right: 10px;">
+                <img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=423794&type=card" class="d-block w-100" alt="...">
+              </div>
+              <div style="max-width:200px; max-height:300px; width: auto; height: auto; margin-right: 10px;">
+                <img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=426794&type=card" class="d-block w-100" alt="...">
+              </div>
+              <div style="max-width:200px; max-height:300px; width: auto; height: auto; margin-right: 10px;">
+                <img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=429794&type=card" class="d-block w-100" alt="...">
+              </div>
+          </div>
+
+
+    </div>
+     
+</body>
+</html>

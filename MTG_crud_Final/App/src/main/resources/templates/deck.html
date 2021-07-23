@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Manage your Deck</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- development version, includes helpful console warnings -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container" style=" background-image: linear-gradient(to right, rgb(209, 202, 202) , rgb(114, 218, 236));"  >    
+  
+    <h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
+
+    <div th:object="${deck}" class="card" style="background-image: url('https://wallpaperchat.com/walls/full/a/b/9/405188.jpg');" >
+
+      <div class="card-body ">
+
+        <h5 th:text="${deck.name}" class="card-title" style="color: antiquewhite;"></h5>
+        <h6 th:text="${deck.creator}" class="card-subtitle mb-2 text-muted" style="color: antiquewhite;"></h6>
+        <p th:text="${deck.description}" class="card-text" style="color: antiquewhite; margin-bottom: 20px;"></p>
+      
+        <ul th:each="card : ${deck.cards}" class="list-group list-group-flush" style="list-style-type: none; display: flex;">
+          <div class="">
+          <li th:text="${card.name}" class="list-group-item" style=" background-image: linear-gradient(to right, rgb(129, 94, 17) , rgb(122, 200, 214)); color: blanchedalmond;"></li>
+          <li ><img th:src="${card.imageUrl}" alt=""></li>
+        </div>
+        </ul>
+
+      </div>
+      
+    </div>
+    <br>
+
+    <a class="btn btn-primary" th:href="@{{id}/addcard (id=${deck.id})}" role="button" style="margin-bottom: 50px;">Add Card</a>
+    <a class="btn btn-primary" th:href="@{/decks}" role="button" style="margin-bottom: 50px;">See all decks</a>
+    
+  </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
