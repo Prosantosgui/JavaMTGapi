@@ -9,11 +9,11 @@ Tecnologias implementadas da seguinte forma:
                     |
                     v
                       
--Banco de dados Maria DB para armazenar dados de login do usuário
--Spring boot para inicialização do projeto e organização de bibliotecas
--Spring security para registro e permissão a novos usuários
--Organização de pastas seguindo o modelo Spring MVC
--Obtenção de dados através do modo API restful
--Uso de bootstrap para personalização das views
+	-Banco de dados Maria DB para armazenar dados de login do usuário		
+	-Spring boot para inicialização do projeto e organização de bibliotecas
+	-Spring security para registro e permissão a novos usuários
+	-Organização de pastas seguindo o modelo Spring MVC
+	-Obtenção de dados através do modo API restful
+	-Uso de bootstrap para personalização das views
 
 *******************************************
