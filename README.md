@@ -39,3 +39,8 @@ Screenshots
 <p align="center">
    <img widht="600" height="400" src="/MTG_crud_Final/App/src/addcard.png"></img>
 </p
+
+<p align="center">
+   <img widht="600" height="400" src="/MTG_crud_Final/App/src/decklist.png"></img>
+</p
+
