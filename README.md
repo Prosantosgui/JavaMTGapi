@@ -20,8 +20,9 @@ Tecnologias implementadas da seguinte forma:
 
 Screenshots 
 
-<p align="center">
-   \n <img widht="600" height="400" src="/MTG_crud_Final/App/src/home.png"></img>
+
+<p>
+   <img widht="600" height="400" src="/MTG_crud_Final/App/src/home.png"></img>
 </p
 
 <p align="center">
