@@ -21,5 +21,21 @@ Tecnologias implementadas da seguinte forma:
 Screenshots 
 
 <p align="center">
-   <img widht="470" height="300" src="/MTG_crud_Final/App/src/home.png"></img>
+   <img widht="600" height="400" src="/MTG_crud_Final/App/src/home.png"></img>
+</p
+
+<p align="center">
+   <img widht="600" height="400" src="/MTG_crud_Final/App/src/registro.png"></img>
+</p
+
+<p align="center">
+   <img widht="600" height="400" src="/MTG_crud_Final/App/src/login.png"></img>
+</p
+
+<p align="center">
+   <img widht="600" height="400" src="/MTG_crud_Final/App/src/novo deck.png"></img>
+</p
+
+<p align="center">
+   <img widht="600" height="400" src="/MTG_crud_Final/App/src/addcard.png"></img>
 </p
