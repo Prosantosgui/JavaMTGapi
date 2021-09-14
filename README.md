@@ -21,5 +21,5 @@ Tecnologias implementadas da seguinte forma:
 Screenshots 
 
 <p align="center">
-   <img widht="470" src="src/home.png"></img>
+   <img widht="470" height="300" src="src/home.png"></img>
 </p
