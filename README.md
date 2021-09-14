@@ -17,3 +17,9 @@ Tecnologias implementadas da seguinte forma:
 	-Uso de bootstrap para personalização das views
 
 *******************************************
+
+Screenshots 
+
+<p align="center">
+   <img widht="470" src="src/home.png"></img>
+</p
