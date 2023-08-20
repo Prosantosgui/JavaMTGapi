@@ -52,23 +52,11 @@ public class RestClient {
         
         HttpEntity<String> entity = new HttpEntity<String>(httpHeaders);
         
-        // ResponseEntity<String> response1 = restTemplate.exchange("https://api.magicthegathering.io/v1/cards", HttpMethod.GET, entity, String.class);
         ResponseEntity<String> response1 = (restTemplate.exchange("https://api.magicthegathering.io/v1/cards", HttpMethod.GET, entity, String.class));
-        
-        //System.out.println("PRINT LINHA 77");
-        //System.out.println(response1);
-        //System.out.println(response1.getClass());
-        //System.out.println((response1.getBody()).getClass());
         
         ObjectMapper mapper = new ObjectMapper();
         Cards result = mapper.readValue(response1.getBody(), new TypeReference<Cards>(){});
         List<Card> result2 = result.getCards(); 
-        //System.out.println("PRINT LINHA 84");
-        //System.out.println(result.getClass());
-        //System.out.println(result2);
-        //System.out.println(result2.size());
-        
-        //System.out.println(listaCards.cardList.size());
         
         return result2;
     }
@@ -78,15 +66,8 @@ public class RestClient {
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
         
-        // System.out.println("--- 2");
         HttpEntity<String> entity = new HttpEntity<String>(httpHeaders);
-        // System.out.println(entity);
         ResponseEntity<Deck> response1 = restTemplate.exchange("http://localhost:8080/api/decks/"+id, HttpMethod.GET, entity, Deck.class);
-        // System.out.println(response1);
-        // System.out.println(response1.getBody());
-        
-        //ObjectMapper mapper = new ObjectMapper();
-        //Deck deck = mapper.readValue(response1.getBody(), new TypeReference<Deck>(){});
 
         return response1.getBody();
 
